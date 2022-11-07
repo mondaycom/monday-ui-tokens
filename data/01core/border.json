@@ -3,12 +3,12 @@
     "width": {
       "value": "1px",
       "global": true,
-      "customProperty": false
+      "customProperty": true
     },
     "style": {
       "value": "solid",
       "global": true,
-      "customProperty": false
+      "customProperty": true
     },
     "radius": {
       "small": {
