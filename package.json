@@ -1,9 +1,11 @@
 {
   "name": "monday-ui-tokens",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vibe tokens",
   "main": "index.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "glob": "^8.0.3",
     "style-dictionary": "^3.7.1"
