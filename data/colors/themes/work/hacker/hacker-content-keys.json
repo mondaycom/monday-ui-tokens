@@ -1,0 +1,928 @@
+{
+  "hacker-theme": {
+    "content": {
+      "color": {
+        "grass_green": {
+          "@": {
+            "value": "{color.grass_green.400.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "hover": {
+            "value": "{color.grass_green.600.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "selected": {
+            "value": "{color.grass_green.800.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          }
+        },
+        "done_green": {
+          "@": {
+            "value": "{color.done_green.400.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "hover": {
+            "value": "{color.done_green.600.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "selected": {
+            "value": "{color.done_green.800.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          }
+        },
+        "bright_green": {
+          "@": {
+            "value": "{color.bright_green.400.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "hover": {
+            "value": "{color.bright_green.600.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "selected": {
+            "value": "{color.bright_green.800.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          }
+        },
+        "saladish": {
+          "@": {
+            "value": "{color.saladish.400.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "hover": {
+            "value": "{color.saladish.600.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "selected": {
+            "value": "{color.saladish.800.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          }
+        },
+        "egg_yolk": {
+          "@": {
+            "value": "{color.egg_yolk.400.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "hover": {
+            "value": "{color.egg_yolk.600.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "selected": {
+            "value": "{color.egg_yolk.800.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          }
+        },
+        "working_orange": {
+          "@": {
+            "value": "{color.working_orange.400.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "hover": {
+            "value": "{color.working_orange.600.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "selected": {
+            "value": "{color.working_orange.800.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          }
+        },
+        "dark_orange": {
+          "@": {
+            "value": "{color.dark_orange.400.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "hover": {
+            "value": "{color.dark_orange.600.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "selected": {
+            "value": "{color.dark_orange.800.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          }
+        },
+        "peach": {
+          "@": {
+            "value": "{color.peach.400.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "hover": {
+            "value": "{color.peach.600.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "selected": {
+            "value": "{color.peach.800.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          }
+        },
+        "sunset": {
+          "@": {
+            "value": "{color.sunset.400.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "hover": {
+            "value": "{color.sunset.600.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "selected": {
+            "value": "{color.sunset.800.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          }
+        },
+        "stuck-red": {
+          "@": {
+            "value": "{color.stuck-red.400.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "hover": {
+            "value": "{color.stuck-red.600.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "selected": {
+            "value": "{color.stuck-red.800.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          }
+        },
+        "dark-red": {
+          "@": {
+            "value": "{color.dark-red.400.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "hover": {
+            "value": "{color.dark-red.600.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "selected": {
+            "value": "{color.dark-red.800.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          }
+        },
+        "sofia_pink": {
+          "@": {
+            "value": "{color.sofia_pink.400.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "hover": {
+            "value": "{color.sofia_pink.600.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "selected": {
+            "value": "{color.sofia_pink.800.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          }
+        },
+        "lipstick": {
+          "@": {
+            "value": "{color.lipstick.400.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "hover": {
+            "value": "{color.lipstick.600.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "selected": {
+            "value": "{color.lipstick.800.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          }
+        },
+        "bubble": {
+          "@": {
+            "value": "{color.bubble.400.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "hover": {
+            "value": "{color.bubble.600.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "selected": {
+            "value": "{color.bubble.800.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          }
+        },
+        "purple": {
+          "@": {
+            "value": "{color.purple.400.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "hover": {
+            "value": "{color.purple.600.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "selected": {
+            "value": "{color.purple.800.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          }
+        },
+        "dark-purple": {
+          "@": {
+            "value": "{color.dark-purple.400.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "hover": {
+            "value": "{color.dark-purple.600.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "selected": {
+            "value": "{color.dark-purple.800.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          }
+        },
+        "berry": {
+          "@": {
+            "value": "{color.berry.350.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "hover": {
+            "value": "{color.berry.600.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "selected": {
+            "value": "{color.berry.800.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          }
+        },
+        "dark_indigo": {
+          "@": {
+            "value": "{color.dark_indigo.350.value}",
+            "type": "color",
+            "role": "key",
+            "theme": "light",
+            "customProperty": true
+          },
+          "hover": {
+            "value": "{color.dark_indigo.600.value}",
+            "type": "color",
+            "role": "key",
+            "theme": "light",
+            "customProperty": true
+          },
+          "selected": {
+            "value": "{color.dark_indigo.800.value}",
+            "type": "color",
+            "role": "key",
+            "theme": "light",
+            "customProperty": true
+          }
+        },
+        "indigo": {
+          "@": {
+            "value": "{color.indigo.400.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "hover": {
+            "value": "{color.indigo.600.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "selected": {
+            "value": "{color.indigo.800.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          }
+        },
+        "navy": {
+          "@": {
+            "value": "{color.navy.400.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "hover": {
+            "value": "{color.navy.600.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "selected": {
+            "value": "{color.navy.800.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          }
+        },
+        "bright-blue": {
+          "@": {
+            "value": "{color.bright-blue.400.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "hover": {
+            "value": "{color.bright-blue.600.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "selected": {
+            "value": "{color.bright-blue.800.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          }
+        },
+        "dark-blue": {
+          "@": {
+            "value": "{color.dark-blue.400.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "hover": {
+            "value": "{color.dark-blue.600.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "selected": {
+            "value": "{color.dark-blue.800.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          }
+        },
+        "aquamarine": {
+          "@": {
+            "value": "{color.aquamarine.400.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "hover": {
+            "value": "{color.aquamarine.600.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "selected": {
+            "value": "{color.aquamarine.800.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          }
+        },
+        "chili-blue": {
+          "@": {
+            "value": "{color.chili-blue.400.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "hover": {
+            "value": "{color.chili-blue.600.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "selected": {
+            "value": "{color.chili-blue.800.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          }
+        },
+        "river": {
+          "@": {
+            "value": "{color.river.400.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "hover": {
+            "value": "{color.river.600.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "selected": {
+            "value": "{color.river.800.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          }
+        },
+        "winter": {
+          "@": {
+            "value": "{color.winter.400.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "hover": {
+            "value": "{color.winter.600.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "selected": {
+            "value": "{color.winter.800.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          }
+        },
+        "explosive": {
+          "@": {
+            "value": "{color.explosive.400.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "hover": {
+            "value": "{color.explosive.600.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "selected": {
+            "value": "{color.explosive.800.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          }
+        },
+        "american_gray": {
+          "@": {
+            "value": "{color.american_gray.400.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "hover": {
+            "value": "{color.american_gray.600.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "selected": {
+            "value": "{color.american_gray.800.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          }
+        },
+        "blackfish": {
+          "@": {
+            "value": "{color.blackfish.400.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "hover": {
+            "value": "{color.blackfish.600.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "selected": {
+            "value": "{color.blackfish.800.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          }
+        },
+        "brown": {
+          "@": {
+            "value": "{color.brown.400.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "hover": {
+            "value": "{color.brown.600.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "selected": {
+            "value": "{color.brown.800.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          }
+        },
+        "orchid": {
+          "@": {
+            "value": "{color.orchid.400.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "hover": {
+            "value": "{color.orchid.550.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "selected": {
+            "value": "{color.orchid.800.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          }
+        },
+        "tan": {
+          "@": {
+            "value": "{color.tan.400.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "hover": {
+            "value": "{color.tan.550.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "selected": {
+            "value": "{color.tan.800.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          }
+        },
+        "sky": {
+          "@": {
+            "value": "{color.sky.400.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "hover": {
+            "value": "{color.sky.550.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "selected": {
+            "value": "{color.sky.800.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          }
+        },
+        "coffee": {
+          "@": {
+            "value": "{color.coffee.400.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "hover": {
+            "value": "{color.coffee.550.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "selected": {
+            "value": "{color.coffee.800.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          }
+        },
+        "royal": {
+          "@": {
+            "value": "{color.royal.400.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "hover": {
+            "value": "{color.royal.550.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "selected": {
+            "value": "{color.royal.800.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          }
+        },
+        "teal": {
+          "@": {
+            "value": "{color.teal.400.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "hover": {
+            "value": "{color.teal.550.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "selected": {
+            "value": "{color.teal.800.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          }
+        },
+        "lavender": {
+          "@": {
+            "value": "{color.lavender.400.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "hover": {
+            "value": "{color.lavender.550.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "selected": {
+            "value": "{color.lavender.800.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          }
+        },
+        "steel": {
+          "@": {
+            "value": "{color.steel.400.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "hover": {
+            "value": "{color.steel.550.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "selected": {
+            "value": "{color.steel.800.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          }
+        },
+        "lilac": {
+          "@": {
+            "value": "{color.lilac.400.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "hover": {
+            "value": "{color.lilac.550.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "selected": {
+            "value": "{color.lilac.800.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          }
+        },
+        "pecan": {
+          "@": {
+            "value": "{color.pecan.400.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "hover": {
+            "value": "{color.pecan.550.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          },
+          "selected": {
+            "value": "{color.pecan.800.value}",
+            "type": "color",
+            "role": "key",
+             "theme": "hacker",
+            "customProperty": true
+          }
+        }
+      }
+    }
+  }
+}

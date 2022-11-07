@@ -1,0 +1,176 @@
+{
+  "font": {
+    "size": {
+      "10": {
+        "value": "{font.reg.size.14}",
+        "global": true,
+        "customProperty": true
+      },
+      "20": {
+        "value": "{font.reg.size.14}",
+        "global": true,
+        "customProperty": true
+      },
+      "30": {
+        "value": "{font.reg.size.base}",
+        "global": true,
+        "customProperty": true
+      },
+      "40": {
+        "value": "{font.reg.size.18}",
+        "global": true,
+        "customProperty": true
+      },
+      "50": {
+        "value": "{font.reg.size.24}",
+        "global": true,
+        "customProperty": true
+      },
+      "60": {
+        "value": "{font.reg.size.30}",
+        "global": true,
+        "customProperty": true
+      },
+      "h1": {
+        "value": "{font.size.60.value}",
+        "global": true,
+        "customProperty": true
+      },
+      "h2": {
+        "value": "{font.size.60.value}",
+        "global": true,
+        "customProperty": true
+      },
+      "h3": {
+        "value": "{font.size.50.value}",
+        "global": true,
+        "customProperty": true
+      },
+      "h4": {
+        "value": "{font.size.40.value}",
+        "global": true,
+        "customProperty": true
+      },
+      "h5":{
+        "value": "{font.size.30.value}",
+        "global": true,
+        "customProperty": true
+      },
+      "general-label": "{font.size.20.value}",
+      "paragraph": "{font.size.30.value}",
+      "subtext": "{font.size.10.value}"
+    },
+    "line-height": {
+      "10": {
+        "value": "{font.reg.line-height.18}",
+        "global": true,
+        "customProperty": true
+      },
+      "20": {
+        "value": "{font.reg.line-height.24}",
+        "global": true,
+        "customProperty": true
+      },
+      "30": {
+        "value": "{font.reg.line-height.24}",
+        "global": true,
+        "customProperty": true
+      },
+      "40": {
+        "value": "{font.reg.line-height.24}",
+        "global": true,
+        "customProperty": true
+      },
+      "50": {
+        "value": "{font.reg.line-height.32}",
+        "global": true,
+        "customProperty": true
+      },
+      "60": {
+        "value": "{font.reg.line-height.42}",
+        "global": true,
+        "customProperty": true
+      },
+      "h1": {
+        "value": "{font.line-height.60}",
+        "global": true,
+        "customProperty": true
+      },
+      "h2": {
+        "value": "{font.line-height.50}",
+        "global": true,
+        "customProperty": true
+      },
+      "h3": {
+        "value": "{font.line-height.50}",
+        "global": true,
+        "customProperty": true
+      },
+      "h4": {
+        "value": "{font.line-height.40}",
+        "global": true,
+        "customProperty": true
+      },
+      "h5": {
+        "value": "{font.line-height.30}",
+        "global": true,
+        "customProperty": true
+      },
+      "general-label": {
+        "value": "{font.line-height.20}",
+        "global": true,
+        "customProperty": true
+      },
+      "paragraph": {
+        "value": "{font.line-height.30}",
+        "global": true,
+        "customProperty": true
+      },
+      "subtext": {
+        "value": "{font.line-height.10}",
+        "global": true,
+        "customProperty": true
+      }
+    },
+    "h1": {
+      "value":"{font.weight.bold} {font.size.h1} / {font.line-height.h1} {h1.font.family}",
+      "global": true,
+      "customProperty": true
+    },
+    "h2": {
+      "value":"{font.weight.bold} {font.size.h2} / {font.line-height.h2} {title.font.family}",
+      "global": true,
+      "customProperty": true
+    },
+    "h3": {
+      "value":"{font.weight.light} {font.size.h3} / {font.line-height.h3} {title.font.family}",
+      "global": true,
+      "customProperty": true
+    },
+    "h4": {
+      "value":"{font.weight.bold} {font.size.h4} / {font.line-height.h4} {title.font.family}",
+      "global": true,
+      "customProperty": true
+    },
+    "h5": {
+      "value":"{font.weight.bold} {font.size.h5} / {font.line-height.h5} {font.family}",
+      "global": true,
+      "customProperty": true
+    },
+    "general-label": {
+      "value":"{font.weight.normal} {font.size.general-label} / {font.line-height.general-label} {font.family}",
+      "global": true,
+      "customProperty": true
+    },
+    "paragraph": {
+      "value":"{font.weight.normal} {font.size.paragraph} / {font.line-height.paragraph} {font.family}",
+      "global": true,
+      "customProperty": true
+    },
+    "subtext": {
+      "value":"{font.weight.normal} {font.size.subtext} / {font.line-height.subtext} {font.family}",
+      "global": true,
+      "customProperty": true
+    }
+  }
+}

@@ -1,0 +1,335 @@
+{
+  "dark-theme": {
+    "primary": {
+      "color": {
+        "value": "{color.basic_blue.value}",
+        "type": "color",
+        "role": "key",
+        "theme": "dark",
+        "product": "work",
+        "customProperty": true
+      },
+      "hover": {
+        "color": {
+          "value": "{color.dark_blue.value}",
+          "type": "color",
+          "role": "key",
+          "theme": "dark",
+          "product": "work",
+          "customProperty": true
+        }
+      },
+      "selected": {
+        "color": {
+          "value": "{color.ocean_blue.value}",
+          "type": "color",
+          "role": "key",
+          "theme": "dark",
+          "product": "work",
+          "customProperty": true
+        }
+      },
+      "text": {
+        "color": {
+          "value": "{color.snow.value}",
+          "rgb": "{color.snow.rgb}",
+          "type": "color",
+          "role": "key",
+          "theme": "dark",
+          "product": "work",
+          "customProperty": true
+        }
+      },
+      "background": {
+        "color": {
+          "value": "{color.midnight.value}",
+          "type": "color",
+          "theme": "dark",
+          "product": "work",
+          "customProperty": true
+        },
+        "hover": {
+          "color": {
+            "value": "{color.silver.value}",
+            "type": "color",
+            "role": "key",
+            "theme": "dark",
+            "product": "work",
+            "customProperty": true
+          }
+        }
+      }
+    },
+    "secondary": {
+      "text": {
+        "color": {
+          "value": "{color.jaco_gray.value}",
+          "comment": "assigned value is not from Vibe {color.jaco_gray.name}",
+          "type": "color",
+          "role": "key",
+          "theme": "dark",
+          "product": "work",
+          "customProperty": true
+        }
+      },
+      "background": {
+        "color": {
+          "value": "{color.graphite.value}",
+          "type": "color",
+          "role": "key",
+          "theme": "dark",
+          "product": "work",
+          "customProperty": true
+        }
+      }
+    },
+    "grey": {
+      "background": {
+        "color": {
+          "value": "{color.midnight.value}",
+          "type": "color",
+          "role": "key",
+          "theme": "dark",
+          "product": "work",
+          "customProperty": true
+        }
+      }
+    },
+    "allgrey": {
+      "background": {
+        "color": {
+          "value": "{color.graphite.value}",
+          "type": "color",
+          "role": "key",
+          "theme": "dark",
+          "product": "work",
+          "customProperty": true
+        }
+      }
+    },
+    "inverted": {
+      "color": {
+        "background": {
+          "value": "{color.snow_white.value}",
+          "type": "color",
+          "role": "key",
+          "theme": "dark",
+          "product": "work",
+          "customProperty": true
+        }
+      }
+    },
+    "text": {
+      "color": {
+        "on-primary": {
+          "value": "{color.snow_white.value}",
+          "type": "color",
+          "role": "key",
+          "theme": "dark",
+          "product": "work",
+          "customProperty": true
+        },
+        "on-inverted": {
+          "value": "{color.mud_black.value}",
+          "type": "color",
+          "role": "key",
+          "theme": "dark",
+          "product": "work",
+          "customProperty": true
+        }
+      }
+    },
+    "disabled": {
+      "text": {
+        "color": {
+          "value": "rgba({dark-theme.primary.text.color.rgb},{disabled.component.opacity.value})",
+          "type": "color",
+          "role": "key",
+          "theme": "dark",
+          "product": "work",
+          "customProperty": true
+        }
+      },
+      "background": {
+        "color": {
+          "value": "{color.silver-muted.value}",
+          "type": "color",
+          "role": "key",
+          "theme": "dark",
+          "product": "work",
+          "customProperty": true
+        }
+      }
+    },
+    "positive": {
+      "color": {
+        "value": "{color.basic_green}",
+        "type": "color",
+        "role": "key",
+        "theme": "dark",
+        "product": "work",
+        "customProperty": true
+      },
+      "color-hover": {
+        "value": "{color.dark_green}",
+        "type": "color",
+        "role": "key",
+        "theme": "dark",
+        "product": "work",
+        "customProperty": true
+      },
+      "color-selected": {
+        "value": "{color.forest_green}",
+        "type": "color",
+        "role": "key",
+        "theme": "dark",
+        "product": "work",
+        "customProperty": true
+      }
+    },
+    "negative": {
+      "color": {
+        "value": "{color.basic_red}",
+        "type": "color",
+        "role": "key",
+        "theme": "dark",
+        "product": "work",
+        "customProperty": true
+      },
+      "color-hover": {
+        "value": "{color.blood_red}",
+        "type": "color",
+        "role": "key",
+        "theme": "dark",
+        "product": "work",
+        "customProperty": true
+      },
+      "color-selected": {
+        "value": "{color.maroon_red}",
+        "type": "color",
+        "role": "key",
+        "theme": "dark",
+        "product": "work",
+        "customProperty": true
+      }
+    },
+    "private": {
+      "color": {
+        "value": "{color.bazooka}",
+        "type": "color",
+        "role": "key",
+        "theme": "dark",
+        "product": "work",
+        "customProperty": true
+      }
+    },
+    "sharable": {
+      "color": {
+        "value": "{color.purple.value}",
+        "type": "color",
+        "role": "key",
+        "theme": "dark",
+        "product": "work",
+        "customProperty": true
+      }
+    },
+    "placeholder": {
+      "color": {
+        "value": "{color.wolf_gray.value}",
+        "type": "color",
+        "role": "key",
+        "theme": "dark",
+        "product": "work",
+        "customProperty": true
+      }
+    },
+    "icon": {
+      "color": {
+        "value": "{color.wolf_gray.value}",
+        "type": "color",
+        "role": "key",
+        "theme": "dark",
+        "product": "work",
+        "customProperty": true
+      }
+    },
+    "link": {
+      "color": {
+        "value": "{color.arctic_blue.value}",
+        "type": "color",
+        "role": "key",
+        "theme": "dark",
+        "product": "work",
+        "customProperty": true
+      }
+    },
+    "ui-border": {
+      "value": "{color.fog.value}",
+      "type": "color",
+      "role": "key",
+      "theme": "dark",
+      "product": "work",
+      "customProperty": true
+    },
+    "layout-border": {
+      "value": "{color.silver.value}",
+      "type": "color",
+      "role": "key",
+      "theme": "dark",
+      "product": "work",
+      "customProperty": true
+    },
+    "shadow": {
+      "opacity": {
+        "value": "{opacity.50.value}",
+        "type": "color",
+        "role": "key",
+        "theme": "dark",
+        "product": "work",
+        "customProperty": false
+      },
+      "color": {
+        "value": "{color.rift.rgb}",
+        "type": "color",
+        "role": "key",
+        "theme": "dark",
+        "product": "work",
+        "customProperty": false
+      }
+    },
+    "box-shadow": {
+      "xs": {
+        "value": "{shadow.size.xs.value} rgba({dark-theme.shadow.color.value},{dark-theme.shadow.opacity.value})",
+        "type": "color",
+        "role": "key",
+        "theme": "dark",
+        "product": "work",
+        "customProperty": true
+      },
+      "small": {
+        "value": "{shadow.size.small.value} rgba({dark-theme.shadow.color.value},{dark-theme.shadow.opacity.value})",
+        "type": "color",
+        "role": "key",
+        "theme": "dark",
+        "product": "work",
+        "customProperty": true
+      },
+      "medium": {
+        "value": "{shadow.size.medium.value} rgba({dark-theme.shadow.color.value},{dark-theme.shadow.opacity.value})",
+        "type": "color",
+        "role": "key",
+        "theme": "dark",
+        "product": "work",
+        "customProperty": true
+      },
+      "large": {
+        "value": "{shadow.size.large.value} rgba({dark-theme.shadow.color.value},{dark-theme.shadow.opacity.value})",
+        "type": "color",
+        "role": "key",
+        "theme": "dark",
+        "product": "work",
+        "customProperty": true
+      }
+    }
+  }
+}

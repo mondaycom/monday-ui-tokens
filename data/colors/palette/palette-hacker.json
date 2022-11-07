@@ -1,0 +1,70 @@
+{
+  "color": {
+    "pink-plastic": {
+      "value": "#fe78c6",
+      "type": "color",
+      "role": "brand",
+      "customProperty": false
+    },
+    "dark-pink-plastic": {
+      "value": "#fe5ab9",
+      "type": "color",
+      "role": "brand",
+      "customProperty": false
+    },
+    "viola-vivid": {
+      "value": "#9f4077",
+      "type": "color",
+      "role": "brand",
+      "customProperty": false
+    },
+    "liliac": {
+      "value": "#bd93f9",
+      "type": "color",
+      "role": "brand",
+      "customProperty": false
+    },
+    "red-fluorescent": {
+      "value": "#ff5555",
+      "type": "color",
+      "role": "brand",
+      "customProperty": false
+    },
+    "green-grotesque": {
+      "value": "#50fa7b",
+      "type": "color",
+      "role": "brand",
+      "customProperty": false
+    },
+    "green-blackboard": {
+      "value": "#26503e",
+      "type": "color",
+      "role": "brand",
+      "customProperty": false
+    },
+    "night-sky": {
+      "value": "#282a36",
+      "type": "color",
+      "role": "natural",
+      "customProperty": false
+    },
+    "blue-manhattan": {
+      "value": "#414458",
+      "type": "color",
+      "role": "natural",
+      "customProperty": false
+    },
+    "parisian-night": {
+      "value": "#303241",
+      "type": "color",
+      "role": "natural",
+      "customProperty": false
+    },
+    "shadow-mountain": {
+      "value": "#595959",
+      "type": "color",
+      "role": "natural",
+      "customProperty": false
+    }
+  }
+}

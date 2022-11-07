@@ -1,0 +1,53 @@
+{
+  "color": {
+    "smoke": {
+      "value": "#8d8d8d",
+      "type": "color",
+      "role": "natural",
+      "customProperty": false
+    },
+    "dust": {
+      "value": "#636363",
+      "type": "color",
+      "role": "natural",
+      "customProperty": false
+    },
+    "dust-muted": {
+      "value": "#3a3a3a",
+      "type": "color",
+      "role": "natural",
+      "customProperty": false
+    },
+    "night": {
+      "value": "#2c2c2c",
+      "type": "color",
+      "role": "natural",
+      "customProperty": false
+    },
+    "vanta": {
+      "value": "#111111",
+      "type": "color",
+      "role": "natural",
+      "customProperty": false
+    },
+    "smog": {
+      "value": "#eeeeee",
+      "rgb": "238, 238, 238",
+      "type": "color",
+      "role": "natural",
+      "customProperty": false
+    },
+    "mouse": {
+      "value": "#aaaaaa",
+      "type": "color",
+      "role": "natural",
+      "customProperty": false
+    },
+    "charcoal": {
+      "value": "#212121",
+      "type": "color",
+      "role": "natural",
+      "customProperty": false
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "motion": {
+    "duration": {
+      "70ms": {
+        "value": "70ms",
+        "global": true,
+        "customProperty": false
+      },
+      "100ms": {
+        "value": "100ms",
+        "global": true,
+        "customProperty": false
+      },
+      "150ms": {
+        "value": "150ms",
+        "global": true,
+        "customProperty": false
+      },
+      "250ms": {
+        "value": "250ms",
+        "global": true,
+        "customProperty": false
+      },
+      "400ms": {
+        "value": "400ms",
+        "global": true,
+        "customProperty": false
+      }
+    },
+    "easing": {
+      "in": {
+        "value": "cubic-bezier(0, 0, 0.35, 1)",
+        "global": true,
+        "customProperty": false
+      },
+      "out": {
+        "value": "cubic-bezier(0.4, 0, 1, 1)",
+        "global": true,
+        "customProperty": false
+      },
+      "in-out": {
+        "value": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "global": true,
+        "customProperty": false
+      },
+      "in-elastic": {
+        "value": "cubic-bezier(0, 0, 0.2, 1.4)",
+        "global": true,
+        "customProperty": false
+      }
+    },
+    "productive": {
+      "short": {
+        "value": "{motion.duration.70ms.value}",
+        "global": true,
+        "customProperty": true
+      },
+      "medium": {
+        "value": "{motion.duration.100ms.value}",
+        "global": true,
+        "customProperty": true
+      },
+      "long": {
+        "value": "{motion.duration.150ms.value}",
+        "global": true,
+        "customProperty": true
+      },
+      "expressive": {
+        "short": {
+          "value": "{motion.duration.250ms.value}",
+          "global": true,
+          "customProperty": true
+        },
+        "long": {
+          "value": "{motion.duration.400ms.value}",
+          "global": true,
+          "customProperty": true
+        }
+      }
+    },
+    "timing": {
+      "enter": {
+        "value": "{motion.easing.in.value}",
+        "global": true,
+        "customProperty": true
+      },
+      "exit": {
+        "value": "{motion.easing.out.value}",
+        "global": true,
+        "customProperty": true
+      },
+      "transition": {
+        "value": "{motion.easing.in-out.value}",
+        "global": true,
+        "customProperty": true
+      },
+      "emphasize": {
+        "value": "{motion.easing.in-elastic.value}",
+        "global": true,
+        "customProperty": true
+      }
+    }
+  },
+  "expand": {
+    "animation": {
+      "timing": {
+        "value": "{motion.timing.enter.value}",
+        "global": true,
+        "customProperty": true
+      }
+    }
+  }
+}

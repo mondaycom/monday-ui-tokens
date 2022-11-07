@@ -1,0 +1,39 @@
+{
+  "spacing": {
+    "xs": {
+      "value": "4px",
+      "global": true,
+      "customProperty": true
+    },
+    "small": {
+      "value": "8px",
+      "global": true,
+      "customProperty": true
+    },
+    "medium": {
+      "value": "16px",
+      "global": true,
+      "customProperty": true
+    },
+    "large": {
+      "value": "24px",
+      "global": true,
+      "customProperty": true
+    },
+    "xl": {
+      "value": "32px",
+      "global": true,
+      "customProperty": true
+    },
+    "xxl": {
+      "value": "48px",
+      "global": true,
+      "customProperty": true
+    },
+    "xxxl": {
+      "value": "64px",
+      "global": true,
+      "customProperty": true
+    }
+  }
+}

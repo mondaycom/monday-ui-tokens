@@ -1,0 +1,31 @@
+{
+  "border": {
+    "width": {
+      "value": "1px",
+      "global": true,
+      "customProperty": false
+    },
+    "style": {
+      "value": "solid",
+      "global": true,
+      "customProperty": false
+    },
+    "radius": {
+      "small": {
+        "value": "4px",
+        "global": true,
+        "customProperty": true
+      },
+      "medium": {
+        "value": "8px",
+        "global": true,
+        "customProperty": true
+      },
+      "big": {
+        "value": "16px",
+        "global": true,
+        "customProperty": true
+      }
+    }
+  }
+}

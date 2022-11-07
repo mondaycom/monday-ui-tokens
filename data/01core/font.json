@@ -1,0 +1,113 @@
+{
+  "font": {
+    "reg": {
+      "size": {
+        "base": "{font.reg.size.16.value}",
+        "14": {
+          "value": "14px",
+          "global": true,
+          "customProperty": false
+        },
+        "16": {
+          "value": "16px",
+          "global": true,
+          "customProperty": false
+        },
+        "18": {
+          "value": "18px",
+          "global": true,
+          "customProperty": false
+        },
+        "24": {
+          "value": "24px",
+          "global": true,
+          "customProperty": false
+        },
+        "30": {
+          "value": "30px",
+          "global": true,
+          "customProperty": false
+        }
+      },
+      "line-height": {
+        "18": {
+          "value": "18px",
+          "global": true,
+          "customProperty": false
+        },
+        "24": {
+          "value": "24px",
+          "global": true,
+          "customProperty": false
+        },
+        "32": {
+          "value": "32px",
+          "global": true,
+          "customProperty": false
+        },
+        "42": {
+          "value": "42px",
+          "global": true,
+          "customProperty": false
+        }
+      }
+    },
+    "weight": {
+      "very-light": {
+        "value": "200",
+        "global": true,
+        "customProperty": true
+      },
+      "light": {
+        "value": "300",
+        "global": true,
+        "customProperty": true
+      },
+      "normal": {
+        "value": "400",
+        "global": true,
+        "customProperty": true
+      },
+      "bold": {
+        "value": "500",
+        "global": true,
+        "customProperty": true
+      }
+    },
+    "family": {
+        "value": "\"Manrope\", \"Roboto\", \"Rubik\", \"Noto Kufi Arabic\", \"Noto Sans JP\", sans-serif",
+        "global": true,
+        "customProperty": true
+    },
+    "smoothing":{
+      "webkit": {
+        "value": "antialiased",
+        "global": true,
+        "customProperty": true
+      },
+      "moz": {
+        "value": "grayscale",
+        "global": true,
+        "customProperty": true
+      }
+    }
+  },
+  "title": {
+    "font":{
+      "family": {
+        "value": "\"Poppins\", \"Roboto\", \"Rubik\", \"Noto Kufi Arabic\", \"Noto Sans JP\", sans-serif",
+        "global": true,
+        "customProperty": true
+      }
+    }
+  },
+  "h1": {
+    "font": {
+      "family": {
+        "value": "{title.font.family.value}",
+        "global": true,
+        "customProperty": true
+      }
+    }
+  }
+}

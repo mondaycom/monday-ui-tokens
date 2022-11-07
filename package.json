@@ -1,0 +1,28 @@
+{
+  "name": "monday-ui-tokens",
+  "version": "1.0.0",
+  "description": "Vibe tokens",
+  "main": "index.js",
+  "files": ["dist"],
+  "dependencies": {
+    "glob": "^8.0.3",
+    "style-dictionary": "^3.7.1"
+  },
+  "scripts": {
+    "build": "node ./scripts/build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mondaycom/monday-ui-tokens.git"
+  },
+  "keywords": [
+    "tokens",
+    "vibe"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mondaycom/monday-ui-tokens/issues"
+  },
+  "homepage": "https://github.com/mondaycom/monday-ui-tokens#readme"
+}

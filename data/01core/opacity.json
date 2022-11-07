@@ -1,0 +1,44 @@
+{
+  "opacity": {
+    "0": {
+      "value": "0",
+      "global": true,
+      "customProperty": false
+    },
+    "10": {
+      "value": "0.1",
+      "global": true,
+      "customProperty": false
+    },
+    "20": {
+      "value": "0.2",
+      "global": true,
+      "customProperty": false
+    },
+    "30": {
+      "value": "0.3",
+      "global": true,
+      "customProperty": false
+    },
+    "38": {
+      "value": "0.38",
+      "global": true,
+      "customProperty": false
+    },
+    "50": {
+      "value": "0.5",
+      "global": true,
+      "customProperty": false
+    },
+    "60": {
+      "value": "0.6",
+      "global": true,
+      "customProperty": false
+    },
+    "100": {
+      "value": "1",
+      "global": true,
+      "customProperty": false
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "disabled": {
+    "component": {
+      "opacity": {
+        "value": "{opacity.38.value}",
+        "global": true,
+        "customProperty": true
+      }
+    }
+  }
+}

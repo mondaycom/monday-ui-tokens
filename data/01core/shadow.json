@@ -1,0 +1,27 @@
+{
+  "shadow": {
+    "size": {
+      "xs": {
+        "value": "0px 4px 6px -4px",
+        "global": true,
+        "customProperty": false
+      },
+      "small": {
+        "value": "0px 4px 8px",
+        "global": true,
+        "customProperty": false
+
+      },
+      "medium": {
+        "value": "0px 6px 20px",
+        "global": true,
+        "customProperty": false
+      },
+      "large": {
+        "value": "0px 15px 50px",
+        "global": true,
+        "customProperty": false
+      }
+    }
+  }
+}

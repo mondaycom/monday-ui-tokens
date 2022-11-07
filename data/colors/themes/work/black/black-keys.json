@@ -1,0 +1,331 @@
+{
+  "black-theme": {
+    "primary": {
+      "color": {
+        "value": "{color.basic_blue.value}",
+        "type": "color",
+        "role": "key",
+        "theme": "black",
+        "product": "work",
+        "customProperty": true
+      },
+      "hover": {
+        "color": {
+          "value": "{color.dark_blue.value}",
+          "type": "color",
+          "role": "key",
+          "theme": "black",
+          "product": "work",
+          "customProperty": true
+        }
+      },
+      "selected": {
+        "color": {
+          "value": "{color.ocean_blue.value}",
+          "type": "color",
+          "role": "key",
+          "theme": "black",
+          "product": "work",
+          "customProperty": true
+        }
+      },
+      "text": {
+        "color": {
+          "value": "{color.smog.value}",
+          "rgb": "{color.smog.rgb}",
+          "type": "color",
+          "role": "key",
+          "theme": "black",
+          "product": "work",
+          "customProperty": true
+        }
+      },
+      "background": {
+        "color": {
+          "value": "{color.vanta.value}",
+          "type": "color",
+          "theme": "black",
+          "product": "work",
+          "customProperty": true
+        },
+        "hover": {
+          "color": {
+            "value": "{color.dust.value}",
+            "type": "color",
+            "role": "key",
+            "theme": "black",
+            "product": "work",
+            "customProperty": true
+          }
+        }
+      }
+    },
+    "secondary": {
+      "text": {
+        "color": {
+          "value": "{color.mouse.value}",
+          "comment": "assigned value is not from Vibe {color.jaco_gray.name}",
+          "type": "color",
+          "role": "key",
+          "theme": "black",
+          "product": "work",
+          "customProperty": true
+        }
+      },
+      "background": {
+        "color": {
+          "value": "{color.night.value}",
+          "type": "color",
+          "role": "key",
+          "theme": "black",
+          "product": "work",
+          "customProperty": true
+        }
+      }
+    },
+    "grey": {
+      "background": {
+        "color": {
+          "value": "{color.vanta.value}",
+          "type": "color",
+          "role": "key",
+          "theme": "black",
+          "product": "work",
+          "customProperty": true
+        }
+      }
+    },
+    "allgrey": {
+      "background": {
+        "color": {
+          "value": "{color.night.value}",
+          "type": "color",
+          "role": "key",
+          "theme": "black",
+          "product": "work",
+          "customProperty": true
+        }
+      }
+    },
+    "inverted": {
+      "color": {
+        "background": {
+          "value": "{color.smog.value}",
+          "type": "color",
+          "role": "key",
+          "theme": "black",
+          "product": "work",
+          "customProperty": true
+        }
+      }
+    },
+    "text": {
+      "color": {
+        "on-primary": {
+          "value": "{color.snow_white.value}",
+          "type": "color",
+          "role": "key",
+          "theme": "black",
+          "product": "work",
+          "customProperty": true
+        },
+        "on-inverted": {
+          "value": "{color.vanta.value}",
+          "type": "color",
+          "role": "key",
+          "theme": "black",
+          "product": "work",
+          "customProperty": true
+        }
+      }
+    },
+    "disabled": {
+      "text": {
+        "color": {
+          "value": "rgba({black-theme.primary.text.color.rgb},{disabled.component.opacity.value})",
+          "type": "color",
+          "role": "key",
+          "theme": "black",
+          "product": "work",
+          "customProperty": true
+        }
+      },
+      "background": {
+        "color": {
+          "value": "{color.dust-muted.value}",
+          "type": "color",
+          "role": "key",
+          "theme": "black",
+          "product": "work",
+          "customProperty": true
+        }
+      }
+    },
+    "positive": {
+      "color": {
+        "value": "{color.basic_green}",
+        "type": "color",
+        "role": "key",
+        "theme": "black",
+        "product": "work",
+        "customProperty": true
+      },
+      "color-hover": {
+        "value": "{color.dark_green}",
+        "type": "color",
+        "role": "key",
+        "theme": "black",
+        "product": "work",
+        "customProperty": true
+      },
+      "color-selected": {
+        "value": "{color.forest_green}",
+        "type": "color",
+        "role": "key",
+        "theme": "black",
+        "product": "work",
+        "customProperty": true
+      }
+    },
+    "negative": {
+      "color": {
+        "value": "{color.basic_red}",
+        "type": "color",
+        "role": "key",
+        "theme": "black",
+        "product": "work",
+        "customProperty": true
+      },
+      "color-hover": {
+        "value": "{color.blood_red}",
+        "type": "color",
+        "role": "key",
+        "theme": "black",
+        "product": "work",
+        "customProperty": true
+      },
+      "color-selected": {
+        "value": "{color.maroon_red}",
+        "type": "color",
+        "role": "key",
+        "theme": "black",
+        "product": "work",
+        "customProperty": true
+      }
+    },
+    "private": {
+      "color": {
+        "value": "{color.bazooka}",
+        "type": "color",
+        "role": "key",
+        "theme": "black",
+        "product": "work",
+        "customProperty": true
+      }
+    },
+    "sharable": {
+      "color": {
+        "value": "{color.purple.value}",
+        "type": "color",
+        "role": "key",
+        "theme": "black",
+        "product": "work",
+        "customProperty": true
+      }
+    },
+    "placeholder": {
+      "color": {
+        "value": "{black-theme.secondary.text.color.value}",
+        "type": "color",
+        "role": "key",
+        "theme": "black",
+        "product": "work",
+        "customProperty": true
+      }
+    },
+    "icon": {
+      "color": {
+        "value": "{black-theme.secondary.text.color.value}",
+        "type": "color",
+        "role": "key",
+        "theme": "black",
+        "product": "work",
+        "customProperty": true
+      }
+    },
+    "link": {
+      "color": {
+        "value": "{color.arctic_blue.value}",
+        "type": "color",
+        "role": "key",
+        "theme": "black",
+        "product": "work",
+        "customProperty": true
+      }
+    },
+    "ui-border": {
+      "color": {
+        "value": "{color.smoke.value}",
+        "type": "color",
+        "role": "key",
+        "theme": "black",
+        "product": "work",
+        "customProperty": true
+      }
+    },
+    "layout-border": {
+      "color": {
+        "value": "{color.dust.value}",
+        "type": "color",
+        "role": "key",
+        "theme": "black",
+        "product": "work",
+        "customProperty": true
+      }
+    },
+    "shadow": {
+      "color": {
+        "value": "{color.black.value}",
+        "type": "color",
+        "role": "key",
+        "theme": "black",
+        "product": "work",
+        "customProperty": false
+      }
+    },
+    "box-shadow": {
+      "xs": {
+        "value": "{shadow.size.xs.value} {black-theme.shadow.color.value}",
+        "type": "color",
+        "role": "key",
+        "theme": "black",
+        "product": "work",
+        "customProperty": true
+      },
+      "small": {
+        "value": "{shadow.size.small.value} {black-theme.shadow.color.value}",
+        "type": "color",
+        "role": "key",
+        "theme": "black",
+        "product": "work",
+        "customProperty": true
+      },
+      "medium": {
+        "value": "{shadow.size.medium.value} {black-theme.shadow.color.value}",
+        "type": "color",
+        "role": "key",
+        "theme": "black",
+        "product": "work",
+        "customProperty": true
+      },
+      "large": {
+        "value": "{shadow.size.large.value} {black-theme.shadow.color.value}",
+        "type": "color",
+        "role": "key",
+        "theme": "black",
+        "product": "work",
+        "customProperty": true
+      }
+    }
+  }
+}

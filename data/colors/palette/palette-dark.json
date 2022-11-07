@@ -1,0 +1,85 @@
+{
+  "color": {
+    "ocean_blue": {
+      "value": "#133774",
+      "type": "color",
+      "role": "brand",
+      "customProperty": false
+    },
+    "arctic_blue": {
+      "value": "#69a7ef",
+      "type": "color",
+      "role": "brand",
+      "customProperty": false
+    },
+    "forest_green": {
+      "value": "#26503e",
+      "type": "color",
+      "role": "brand",
+      "customProperty": false
+    },
+    "maroon_red": {
+      "value": "#642830",
+      "type": "color",
+      "role": "brand",
+      "customProperty": false
+    },
+    "rift": {
+      "value": "#9699a5",
+      "rgb": "150, 153, 165",
+      "type": "color",
+      "role": "brand",
+      "customProperty": false
+    },
+    "midnight": {
+      "value": "#181b34",
+      "type": "color",
+      "role": "natural",
+      "customProperty": false
+    },
+    "graphite": {
+      "value": "#30324e",
+      "type": "color",
+      "role": "natural",
+      "customProperty": false
+    },
+    "silver": {
+      "value": "#4b4e69",
+      "type": "color",
+      "role": "natural",
+      "customProperty": false
+    },
+    "silver-muted": {
+      "value": "#3c3f59",
+      "type": "color",
+      "role": "natural",
+      "customProperty": false
+    },
+    "fog": {
+      "value": "#797e93",
+      "type": "color",
+      "role": "natural",
+      "customProperty": false
+    },
+    "snow": {
+      "value": "#d5d8df",
+      "rgb": "213, 216, 223",
+      "type": "color",
+      "role": "natural",
+      "customProperty": false
+    },
+    "spacegrey": {
+      "value": "#9699a5",
+      "type": "color",
+      "role": "natural",
+      "customProperty": false
+    },
+    "jaco_gray": {
+      "value": "#9699a6",
+      "type": "color",
+      "role": "natural",
+      "comment": "not a Vibe color",
+      "customProperty": false
+    }
+  }
+}
