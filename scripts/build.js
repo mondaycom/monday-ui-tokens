@@ -15,7 +15,6 @@ StyleDictionary.registerFormat({
   name: "scss/variables",
   formatter: function (dictionary, config) {
     return `${dictionary.allProperties.map((prop) => {
-      console.log("$"+prop.path.join("-"));
       return `${"$"+ normalizeTokenName(prop.path.join("-"))}:${prop.value};`;
     })
         .join("\n")}
