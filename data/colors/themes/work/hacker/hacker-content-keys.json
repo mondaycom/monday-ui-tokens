@@ -3,7 +3,7 @@
     "content": {
       "color": {
         "grass_green": {
-          "@": {
+          "[default]": {
             "value": "{color.grass_green.400.value}",
             "type": "color",
             "role": "key",
@@ -26,7 +26,7 @@
           }
         },
         "done_green": {
-          "@": {
+          "[default]": {
             "value": "{color.done_green.400.value}",
             "type": "color",
             "role": "key",
@@ -49,7 +49,7 @@
           }
         },
         "bright_green": {
-          "@": {
+          "[default]": {
             "value": "{color.bright_green.400.value}",
             "type": "color",
             "role": "key",
@@ -72,7 +72,7 @@
           }
         },
         "saladish": {
-          "@": {
+          "[default]": {
             "value": "{color.saladish.400.value}",
             "type": "color",
             "role": "key",
@@ -95,7 +95,7 @@
           }
         },
         "egg_yolk": {
-          "@": {
+          "[default]": {
             "value": "{color.egg_yolk.400.value}",
             "type": "color",
             "role": "key",
@@ -118,7 +118,7 @@
           }
         },
         "working_orange": {
-          "@": {
+          "[default]": {
             "value": "{color.working_orange.400.value}",
             "type": "color",
             "role": "key",
@@ -141,7 +141,7 @@
           }
         },
         "dark_orange": {
-          "@": {
+          "[default]": {
             "value": "{color.dark_orange.400.value}",
             "type": "color",
             "role": "key",
@@ -164,7 +164,7 @@
           }
         },
         "peach": {
-          "@": {
+          "[default]": {
             "value": "{color.peach.400.value}",
             "type": "color",
             "role": "key",
@@ -187,7 +187,7 @@
           }
         },
         "sunset": {
-          "@": {
+          "[default]": {
             "value": "{color.sunset.400.value}",
             "type": "color",
             "role": "key",
@@ -210,7 +210,7 @@
           }
         },
         "stuck-red": {
-          "@": {
+          "[default]": {
             "value": "{color.stuck-red.400.value}",
             "type": "color",
             "role": "key",
@@ -233,7 +233,7 @@
           }
         },
         "dark-red": {
-          "@": {
+          "[default]": {
             "value": "{color.dark-red.400.value}",
             "type": "color",
             "role": "key",
@@ -256,7 +256,7 @@
           }
         },
         "sofia_pink": {
-          "@": {
+          "[default]": {
             "value": "{color.sofia_pink.400.value}",
             "type": "color",
             "role": "key",
@@ -279,7 +279,7 @@
           }
         },
         "lipstick": {
-          "@": {
+          "[default]": {
             "value": "{color.lipstick.400.value}",
             "type": "color",
             "role": "key",
@@ -302,7 +302,7 @@
           }
         },
         "bubble": {
-          "@": {
+          "[default]": {
             "value": "{color.bubble.400.value}",
             "type": "color",
             "role": "key",
@@ -325,7 +325,7 @@
           }
         },
         "purple": {
-          "@": {
+          "[default]": {
             "value": "{color.purple.400.value}",
             "type": "color",
             "role": "key",
@@ -348,7 +348,7 @@
           }
         },
         "dark-purple": {
-          "@": {
+          "[default]": {
             "value": "{color.dark-purple.400.value}",
             "type": "color",
             "role": "key",
@@ -371,7 +371,7 @@
           }
         },
         "berry": {
-          "@": {
+          "[default]": {
             "value": "{color.berry.350.value}",
             "type": "color",
             "role": "key",
@@ -394,30 +394,30 @@
           }
         },
         "dark_indigo": {
-          "@": {
+          "[default]": {
             "value": "{color.dark_indigo.350.value}",
             "type": "color",
             "role": "key",
-            "theme": "light",
+            "theme": "hacker",
             "customProperty": true
           },
           "hover": {
             "value": "{color.dark_indigo.600.value}",
             "type": "color",
             "role": "key",
-            "theme": "light",
+            "theme": "hacker",
             "customProperty": true
           },
           "selected": {
             "value": "{color.dark_indigo.800.value}",
             "type": "color",
             "role": "key",
-            "theme": "light",
+            "theme": "hacker",
             "customProperty": true
           }
         },
         "indigo": {
-          "@": {
+          "[default]": {
             "value": "{color.indigo.400.value}",
             "type": "color",
             "role": "key",
@@ -440,7 +440,7 @@
           }
         },
         "navy": {
-          "@": {
+          "[default]": {
             "value": "{color.navy.400.value}",
             "type": "color",
             "role": "key",
@@ -463,7 +463,7 @@
           }
         },
         "bright-blue": {
-          "@": {
+          "[default]": {
             "value": "{color.bright-blue.400.value}",
             "type": "color",
             "role": "key",
@@ -486,7 +486,7 @@
           }
         },
         "dark-blue": {
-          "@": {
+          "[default]": {
             "value": "{color.dark-blue.400.value}",
             "type": "color",
             "role": "key",
@@ -509,7 +509,7 @@
           }
         },
         "aquamarine": {
-          "@": {
+          "[default]": {
             "value": "{color.aquamarine.400.value}",
             "type": "color",
             "role": "key",
@@ -532,7 +532,7 @@
           }
         },
         "chili-blue": {
-          "@": {
+          "[default]": {
             "value": "{color.chili-blue.400.value}",
             "type": "color",
             "role": "key",
@@ -555,7 +555,7 @@
           }
         },
         "river": {
-          "@": {
+          "[default]": {
             "value": "{color.river.400.value}",
             "type": "color",
             "role": "key",
@@ -578,7 +578,7 @@
           }
         },
         "winter": {
-          "@": {
+          "[default]": {
             "value": "{color.winter.400.value}",
             "type": "color",
             "role": "key",
@@ -601,7 +601,7 @@
           }
         },
         "explosive": {
-          "@": {
+          "[default]": {
             "value": "{color.explosive.400.value}",
             "type": "color",
             "role": "key",
@@ -624,7 +624,7 @@
           }
         },
         "american_gray": {
-          "@": {
+          "[default]": {
             "value": "{color.american_gray.400.value}",
             "type": "color",
             "role": "key",
@@ -647,7 +647,7 @@
           }
         },
         "blackfish": {
-          "@": {
+          "[default]": {
             "value": "{color.blackfish.400.value}",
             "type": "color",
             "role": "key",
@@ -670,7 +670,7 @@
           }
         },
         "brown": {
-          "@": {
+          "[default]": {
             "value": "{color.brown.400.value}",
             "type": "color",
             "role": "key",
@@ -693,7 +693,7 @@
           }
         },
         "orchid": {
-          "@": {
+          "[default]": {
             "value": "{color.orchid.400.value}",
             "type": "color",
             "role": "key",
@@ -716,7 +716,7 @@
           }
         },
         "tan": {
-          "@": {
+          "[default]": {
             "value": "{color.tan.400.value}",
             "type": "color",
             "role": "key",
@@ -739,7 +739,7 @@
           }
         },
         "sky": {
-          "@": {
+          "[default]": {
             "value": "{color.sky.400.value}",
             "type": "color",
             "role": "key",
@@ -762,7 +762,7 @@
           }
         },
         "coffee": {
-          "@": {
+          "[default]": {
             "value": "{color.coffee.400.value}",
             "type": "color",
             "role": "key",
@@ -785,7 +785,7 @@
           }
         },
         "royal": {
-          "@": {
+          "[default]": {
             "value": "{color.royal.400.value}",
             "type": "color",
             "role": "key",
@@ -808,7 +808,7 @@
           }
         },
         "teal": {
-          "@": {
+          "[default]": {
             "value": "{color.teal.400.value}",
             "type": "color",
             "role": "key",
@@ -831,7 +831,7 @@
           }
         },
         "lavender": {
-          "@": {
+          "[default]": {
             "value": "{color.lavender.400.value}",
             "type": "color",
             "role": "key",
@@ -854,7 +854,7 @@
           }
         },
         "steel": {
-          "@": {
+          "[default]": {
             "value": "{color.steel.400.value}",
             "type": "color",
             "role": "key",
@@ -877,7 +877,7 @@
           }
         },
         "lilac": {
-          "@": {
+          "[default]": {
             "value": "{color.lilac.400.value}",
             "type": "color",
             "role": "key",
@@ -900,7 +900,7 @@
           }
         },
         "pecan": {
-          "@": {
+          "[default]": {
             "value": "{color.pecan.400.value}",
             "type": "color",
             "role": "key",
