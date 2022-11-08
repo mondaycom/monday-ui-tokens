@@ -223,7 +223,7 @@
         "customProperty": true
       }
     },
-    "sharable": {
+    "shareable": {
       "color": {
         "value": "{color.purple.value}",
         "type": "color",
@@ -264,20 +264,24 @@
       }
     },
     "ui-border": {
-      "value": "{color.smoke.value}",
-      "type": "color",
-      "role": "key",
-      "theme": "hacker",
-      "product": "work",
-      "customProperty": true
+      "color": {
+        "value": "{color.smoke.value}",
+        "type": "color",
+        "role": "key",
+        "theme": "hacker",
+        "product": "work",
+        "customProperty": true
+      }
     },
     "layout-border": {
-      "value": "{color.dust.value}",
-      "type": "color",
-      "role": "key",
-      "theme": "hacker",
-      "product": "work",
-      "customProperty": true
+      "color": {
+        "value": "{color.dust.value}",
+        "type": "color",
+        "role": "key",
+        "theme": "hacker",
+        "product": "work",
+        "customProperty": true
+      }
     },
     "shadow": {
       "color": {

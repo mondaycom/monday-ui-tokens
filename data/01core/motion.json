@@ -64,18 +64,18 @@
         "value": "{motion.duration.150ms.value}",
         "global": true,
         "customProperty": true
+      }
+    },
+    "expressive": {
+      "short": {
+        "value": "{motion.duration.250ms.value}",
+        "global": true,
+        "customProperty": true
       },
-      "expressive": {
-        "short": {
-          "value": "{motion.duration.250ms.value}",
-          "global": true,
-          "customProperty": true
-        },
-        "long": {
-          "value": "{motion.duration.400ms.value}",
-          "global": true,
-          "customProperty": true
-        }
+      "long": {
+        "value": "{motion.duration.400ms.value}",
+        "global": true,
+        "customProperty": true
       }
     },
     "timing": {

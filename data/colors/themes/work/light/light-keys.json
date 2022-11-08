@@ -222,7 +222,7 @@
         "customProperty": true
       }
     },
-    "sharable": {
+    "shareable": {
       "color": {
         "value": "{color.purple.value}",
         "type": "color",
@@ -263,20 +263,24 @@
       }
     },
     "ui-border": {
-      "value": "{color.wolf_gray.value}",
-      "type": "color",
-      "role": "key",
-      "theme": "light",
-      "product": "work",
-      "customProperty": true
+      "color": {
+        "value": "{color.wolf_gray.value}",
+        "type": "color",
+        "role": "key",
+        "theme": "light",
+        "product": "work",
+        "customProperty": true
+      }
     },
     "layout-border": {
-      "value": "{color.ui_grey.value}",
-      "type": "color",
-      "role": "key",
-      "theme": "light",
-      "product": "work",
-      "customProperty": true
+      "color": {
+        "value": "{color.ui_grey.value}",
+        "type": "color",
+        "role": "key",
+        "theme": "light",
+        "product": "work",
+        "customProperty": true
+      }
     },
     "shadow": {
       "xs": {

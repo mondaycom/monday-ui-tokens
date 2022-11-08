@@ -51,14 +51,20 @@
         "global": true,
         "customProperty": true
       },
-      "h5":{
+      "h5": {
         "value": "{font.size.30.value}",
         "global": true,
         "customProperty": true
       },
-      "general-label": "{font.size.20.value}",
-      "paragraph": "{font.size.30.value}",
-      "subtext": "{font.size.10.value}"
+      "general-label": {
+        "value": "{font.size.20.value}"
+      },
+      "paragraph": {
+        "value": "{font.size.30.value}"
+      },
+      "subtext": {
+        "value": "{font.size.10.value}"
+      }
     },
     "line-height": {
       "10": {
@@ -133,42 +139,42 @@
       }
     },
     "h1": {
-      "value":"{font.weight.bold} {font.size.h1} / {font.line-height.h1} {h1.font.family}",
+      "value": "{font.weight.bold} {font.size.h1} / {font.line-height.h1} {h1.font.family}",
       "global": true,
       "customProperty": true
     },
     "h2": {
-      "value":"{font.weight.bold} {font.size.h2} / {font.line-height.h2} {title.font.family}",
+      "value": "{font.weight.bold} {font.size.h2} / {font.line-height.h2} {title.font.family}",
       "global": true,
       "customProperty": true
     },
     "h3": {
-      "value":"{font.weight.light} {font.size.h3} / {font.line-height.h3} {title.font.family}",
+      "value": "{font.weight.light} {font.size.h3} / {font.line-height.h3} {title.font.family}",
       "global": true,
       "customProperty": true
     },
     "h4": {
-      "value":"{font.weight.bold} {font.size.h4} / {font.line-height.h4} {title.font.family}",
+      "value": "{font.weight.bold} {font.size.h4} / {font.line-height.h4} {title.font.family}",
       "global": true,
       "customProperty": true
     },
     "h5": {
-      "value":"{font.weight.bold} {font.size.h5} / {font.line-height.h5} {font.family}",
+      "value": "{font.weight.bold} {font.size.h5} / {font.line-height.h5} {font.family}",
       "global": true,
       "customProperty": true
     },
     "general-label": {
-      "value":"{font.weight.normal} {font.size.general-label} / {font.line-height.general-label} {font.family}",
+      "value": "{font.weight.normal} {font.size.general-label} / {font.line-height.general-label} {font.family}",
       "global": true,
       "customProperty": true
     },
     "paragraph": {
-      "value":"{font.weight.normal} {font.size.paragraph} / {font.line-height.paragraph} {font.family}",
+      "value": "{font.weight.normal} {font.size.paragraph} / {font.line-height.paragraph} {font.family}",
       "global": true,
       "customProperty": true
     },
     "subtext": {
-      "value":"{font.weight.normal} {font.size.subtext} / {font.line-height.subtext} {font.family}",
+      "value": "{font.weight.normal} {font.size.subtext} / {font.line-height.subtext} {font.family}",
       "global": true,
       "customProperty": true
     }

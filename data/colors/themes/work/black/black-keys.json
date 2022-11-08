@@ -223,7 +223,7 @@
         "customProperty": true
       }
     },
-    "sharable": {
+    "shareable": {
       "color": {
         "value": "{color.purple.value}",
         "type": "color",

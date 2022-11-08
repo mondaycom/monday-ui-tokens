@@ -356,8 +356,8 @@
         "customProperty": false
       },
       "500": {
-        "value": "",
-        "type": "#e2445c",
+        "value": "#e2445c",
+        "type": "color",
         "role": "content",
         "customProperty": false
       },
