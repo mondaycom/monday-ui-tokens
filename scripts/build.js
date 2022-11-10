@@ -8,7 +8,6 @@ const {
   normalizeTokenName,
   normalizeTokenPath,
   getDictionary,
-  traverseAndReplace,
 } = require("../lib/utils");
 
 const themes = [`light`, `dark`, `black`, `hacker`];
