@@ -40,16 +40,6 @@ StyleDictionary.registerFormat({
       } else {
         for (const name in obj) {
           if (obj.hasOwnProperty(name)) {
-            // if (obj[name].path && obj[name].path.includes("[default]")) {
-            //   console.log(
-            //     "obj[name].path: ",
-            //     obj[name].path.map((item) =>
-            //       item.replace(/\[default\]/, "default")
-            //     )
-            //   );
-            //   tree[name] = recursiveleyFlattenDictionary(obj[name]);
-            // }
-
             tree[name] = recursiveleyFlattenDictionary(obj[name]);
           }
         }
