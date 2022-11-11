@@ -8,10 +8,12 @@ const {
   normalizeTokenName,
   normalizeTokenPath,
   getDictionary,
+  normalizeThemeName,
 } = require("../lib/utils");
 
 const themes = [`light`, `dark`, `black`, `hacker`];
 
+// scss
 StyleDictionary.registerFormat({
   name: "scss/variables",
   formatter: function (dictionary, config) {
@@ -25,6 +27,7 @@ StyleDictionary.registerFormat({
       `;
   },
 });
+// js object
 StyleDictionary.registerFormat({
   name: "javascript/object",
   formatter: function ({ dictionary }) {
@@ -46,7 +49,7 @@ StyleDictionary.registerFormat({
       return tree;
     };
 
-    let tokensObj = getDictionary(dictionary);
+    const tokensObj = getDictionary(dictionary);
 
     return `${this.selector} ${JSON.stringify(
       recursiveleyFlattenDictionary(normalizeTokenPath(tokensObj)),
@@ -55,9 +58,7 @@ StyleDictionary.registerFormat({
     )}`;
   },
 });
-//
-
-// js object
+// js esm
 StyleDictionary.registerFormat({
   name: "javascript/object/esm",
   formatter: function ({ dictionary, file }) {
@@ -80,8 +81,9 @@ StyleDictionary.registerFormat({
       return tree;
     };
 
+    const tokensObj = getDictionary(dictionary);
     return `${this.selector} ${JSON.stringify(
-      recursiveleyFlattenDictionary(getDictionary(dictionary)),
+      recursiveleyFlattenDictionary(normalizeTokenPath(tokensObj)),
       null,
       2
     )}`;
@@ -121,8 +123,9 @@ StyleDictionary.registerFormat({
       return tree;
     };
 
+    const tokensObj = getDictionary(dictionary);
     const output = `${this.selector}: ${JSON.stringify(
-      recursiveTypeGeneration(getDictionary(dictionary)),
+      recursiveTypeGeneration(normalizeTokenPath(tokensObj)),
       null,
       2
     )}    
@@ -139,7 +142,7 @@ StyleDictionary.registerFormat({
 // ts index
 StyleDictionary.registerFormat({
   name: "typescript/index",
-  formatter: function ({ dictionary, options, file }) {
+  formatter: function ({ dictionary }) {
     const getType = (value) => {
       switch (typeof value) {
         case "string":
@@ -151,7 +154,7 @@ StyleDictionary.registerFormat({
       }
     };
 
-    const recursiveTypeGeneration = (obj) => {
+    const generateTypes = (obj) => {
       const tree = {};
 
       if (typeof obj !== "object" || Array.isArray(obj)) {
@@ -163,15 +166,17 @@ StyleDictionary.registerFormat({
       } else {
         for (const name in obj) {
           if (obj.hasOwnProperty(name)) {
-            tree[name] = recursiveTypeGeneration(obj[name]);
+            tree[name] = generateTypes(obj[name]);
           }
         }
       }
       return tree;
     };
 
+    const normalizedThemeObj = normalizeThemeName(dictionary.tokens);
+
     const output = `${this.selector}: ${JSON.stringify(
-      recursiveTypeGeneration(dictionary.tokens),
+      generateTypes(normalizeTokenPath(normalizedThemeObj)),
       null,
       2
     )}
@@ -184,24 +189,22 @@ StyleDictionary.registerFormat({
   },
 });
 //
-//
-//
 StyleDictionary.extend({
   source: ["data/**/*.json"],
   platforms: {
-    // scss: {
-    //   source: glob.sync(`data/colors/**/*.json`),
-    //   buildPath: "dist/scss/",
-    //   files: [
-    //     {
-    //       destination: "variables.scss",
-    //       format: "scss/variables",
-    //       options: {
-    //         outputReferences: false,
-    //       },
-    //     },
-    //   ],
-    // },
+    scss: {
+      source: glob.sync(`data/colors/**/*.json`),
+      buildPath: "dist/scss/",
+      files: [
+        {
+          destination: "variables.scss",
+          format: "scss/variables",
+          options: {
+            outputReferences: false,
+          },
+        },
+      ],
+    },
     jsObject: {
       source: glob.sync(`data/colors/**/*.json`),
       buildPath: "dist/js/",
@@ -253,96 +256,96 @@ StyleDictionary.extend({
         },
       ],
     },
-    // jsObjectEsm: {
-    //   source: glob.sync(`data/colors/**/*.json`),
-    //   buildPath: `dist/js/`,
-    //   files: [
-    //     {
-    //       destination: `esm/colors/black.js`,
-    //       format: "javascript/object/esm",
-    //       selector: "export const black =",
-    //       filter: {
-    //         customProperty: true,
-    //         theme: "black",
-    //       },
-    //     },
-    //     {
-    //       destination: `esm/colors/dark.js`,
-    //       format: "javascript/object/esm",
-    //       selector: "export const dark =",
-    //       filter: {
-    //         customProperty: true,
-    //         theme: "dark",
-    //       },
-    //     },
-    //     {
-    //       destination: `esm/colors/hacker.js`,
-    //       format: "javascript/object/esm",
-    //       selector: "export const hacker =",
-    //       filter: {
-    //         customProperty: true,
-    //         theme: "hacker",
-    //       },
-    //     },
-    //     {
-    //       destination: `esm/colors/light.js`,
-    //       format: "javascript/object/esm",
-    //       selector: "export const light =",
-    //       filter: {
-    //         customProperty: true,
-    //         theme: "light",
-    //       },
-    //     },
-    //   ],
-    // },
-    // jsObjectTypeDeclarations: {
-    //   source: glob.sync(`data/colors/**/*.json`),
-    //   buildPath: `dist/js/`,
-    //   files: [
-    //     {
-    //       destination: `esm/colors/black.d.ts`,
-    //       format: "typescript/module-declarations",
-    //       selector: "declare const black",
-    //       filter: {
-    //         customProperty: true,
-    //         theme: "black",
-    //       },
-    //     },
-    //     {
-    //       destination: `esm/colors/dark.d.ts`,
-    //       format: "typescript/module-declarations",
-    //       selector: "declare const dark",
-    //       filter: {
-    //         customProperty: true,
-    //         theme: "dark",
-    //       },
-    //     },
-    //     {
-    //       destination: `esm/colors/light.d.ts`,
-    //       format: "typescript/module-declarations",
-    //       selector: "declare const light",
-    //       filter: {
-    //         customProperty: true,
-    //         theme: "light",
-    //       },
-    //     },
-    //   ],
-    // },
-    // jsObjectTypeIndex: {
-    //   source: glob.sync(`data/colors/**/*.json`),
-    //   buildPath: `dist/js/`,
-    //   files: [
-    //     {
-    //       destination: `esm/colors/index.d.ts`,
-    //       format: "typescript/index",
-    //       selector: "declare const _default",
-    //       filter: {
-    //         customProperty: true,
-    //         type: "color",
-    //       },
-    //     },
-    //   ],
-    // },
+    jsObjectEsm: {
+      source: glob.sync(`data/colors/**/*.json`),
+      buildPath: `dist/js/`,
+      files: [
+        {
+          destination: `esm/colors/black.js`,
+          format: "javascript/object/esm",
+          selector: "export const black =",
+          filter: {
+            customProperty: true,
+            theme: "black",
+          },
+        },
+        {
+          destination: `esm/colors/dark.js`,
+          format: "javascript/object/esm",
+          selector: "export const dark =",
+          filter: {
+            customProperty: true,
+            theme: "dark",
+          },
+        },
+        {
+          destination: `esm/colors/hacker.js`,
+          format: "javascript/object/esm",
+          selector: "export const hacker =",
+          filter: {
+            customProperty: true,
+            theme: "hacker",
+          },
+        },
+        {
+          destination: `esm/colors/light.js`,
+          format: "javascript/object/esm",
+          selector: "export const light =",
+          filter: {
+            customProperty: true,
+            theme: "light",
+          },
+        },
+      ],
+    },
+    jsObjectTypeDeclarations: {
+      source: glob.sync(`data/colors/**/*.json`),
+      buildPath: `dist/js/`,
+      files: [
+        {
+          destination: `esm/colors/black.d.ts`,
+          format: "typescript/module-declarations",
+          selector: "declare const black",
+          filter: {
+            customProperty: true,
+            theme: "black",
+          },
+        },
+        {
+          destination: `esm/colors/dark.d.ts`,
+          format: "typescript/module-declarations",
+          selector: "declare const dark",
+          filter: {
+            customProperty: true,
+            theme: "dark",
+          },
+        },
+        {
+          destination: `esm/colors/light.d.ts`,
+          format: "typescript/module-declarations",
+          selector: "declare const light",
+          filter: {
+            customProperty: true,
+            theme: "light",
+          },
+        },
+      ],
+    },
+    jsObjectTypeIndex: {
+      source: glob.sync(`data/colors/**/*.json`),
+      buildPath: `dist/js/`,
+      files: [
+        {
+          destination: `esm/colors/index.d.ts`,
+          format: "typescript/index",
+          selector: "declare const _default",
+          filter: {
+            customProperty: true,
+            type: "color",
+          },
+        },
+      ],
+    },
   },
 }).buildAllPlatforms();
 
