@@ -104,7 +104,7 @@ StyleDictionary.registerFormat({
       }
     };
 
-    const recursiveTypeGeneration = (obj) => {
+    const generateTypes = (obj) => {
       const tree = {};
 
       if (typeof obj !== "object" || Array.isArray(obj)) {
@@ -116,7 +116,7 @@ StyleDictionary.registerFormat({
       } else {
         for (const name in obj) {
           if (obj.hasOwnProperty(name)) {
-            tree[name] = recursiveTypeGeneration(obj[name]);
+            tree[name] = generateTypes(obj[name]);
           }
         }
       }
@@ -125,7 +125,7 @@ StyleDictionary.registerFormat({
 
     const tokensObj = getDictionary(dictionary);
     const output = `${this.selector}: ${JSON.stringify(
-      recursiveTypeGeneration(normalizeTokenPath(tokensObj)),
+      generateTypes(normalizeTokenPath(tokensObj)),
       null,
       2
     )}    
