@@ -6,24 +6,31 @@ const {
   writeMainTsIndex,
   writeEsmIndex,
   normalizeTokenName,
-  lookupTheme,
+  normalizeTokenPath,
+  getDictionary,
+  normalizeThemeName,
 } = require("../lib/utils");
 
 const themes = [`light`, `dark`, `black`, `hacker`];
 
+// scss
 StyleDictionary.registerFormat({
   name: "scss/variables",
   formatter: function (dictionary, config) {
-    return `${dictionary.allProperties.map((prop) => {
-      return `${"$"+ normalizeTokenName(prop.path.join("-"))}:${prop.value};`;
-    })
-        .join("\n")}
+    return `${dictionary.allProperties
+      .map((prop) => {
+        return `${"$" + normalizeTokenName(prop.path.join("-"))}:${
+          prop.value
+        };`;
+      })
+      .join("\n")}
       `;
   },
 });
+// js object
 StyleDictionary.registerFormat({
   name: "javascript/object",
-  formatter: function ({dictionary, file}) {
+  formatter: function ({ dictionary }) {
     const recursiveleyFlattenDictionary = (obj) => {
       const tree = {};
       if (typeof obj !== "object" || Array.isArray(obj)) {
@@ -41,20 +48,20 @@ StyleDictionary.registerFormat({
       }
       return tree;
     };
+
+    const tokensObj = getDictionary(dictionary);
+
     return `${this.selector} ${JSON.stringify(
-        recursiveleyFlattenDictionary(dictionary.tokens),
-        null,
-        2
+      recursiveleyFlattenDictionary(normalizeTokenPath(tokensObj)),
+      null,
+      2
     )}`;
   },
 });
-//
-//
-// js object
+// js esm
 StyleDictionary.registerFormat({
   name: "javascript/object/esm",
-  formatter: function ({dictionary, file}) {
-    const themeRegEx = new RegExp(/^[a-zA-Z]+-theme$/);
+  formatter: function ({ dictionary, file }) {
     const recursiveleyFlattenDictionary = (obj) => {
       const tree = {};
       if (typeof obj !== "object" || Array.isArray(obj)) {
@@ -74,20 +81,18 @@ StyleDictionary.registerFormat({
       return tree;
     };
 
+    const tokensObj = getDictionary(dictionary);
     return `${this.selector} ${JSON.stringify(
-        recursiveleyFlattenDictionary(
-            // get the object at its first key, which should always be the name of the theme
-            dictionary.tokens[Object.entries(dictionary.tokens)[0][0]]
-        ),
-        null,
-        2
+      recursiveleyFlattenDictionary(normalizeTokenPath(tokensObj)),
+      null,
+      2
     )}`;
   },
 });
 // ts declarations
 StyleDictionary.registerFormat({
   name: "typescript/module-declarations",
-  formatter: function ({dictionary, options, file}) {
+  formatter: function ({ dictionary, options, file }) {
     const getType = (value) => {
       switch (typeof value) {
         case "string":
@@ -99,7 +104,7 @@ StyleDictionary.registerFormat({
       }
     };
 
-    const recursiveTypeGeneration = (obj) => {
+    const generateTypes = (obj) => {
       const tree = {};
 
       if (typeof obj !== "object" || Array.isArray(obj)) {
@@ -111,35 +116,33 @@ StyleDictionary.registerFormat({
       } else {
         for (const name in obj) {
           if (obj.hasOwnProperty(name)) {
-            tree[name] = recursiveTypeGeneration(obj[name]);
+            tree[name] = generateTypes(obj[name]);
           }
         }
       }
       return tree;
     };
 
+    const tokensObj = getDictionary(dictionary);
     const output = `${this.selector}: ${JSON.stringify(
-        // get the object at its first key, which should always be the name of the theme
-        recursiveTypeGeneration(
-            dictionary.tokens[Object.entries(dictionary.tokens)[0][0]]
-        ),
-        null,
-        2
+      generateTypes(normalizeTokenPath(tokensObj)),
+      null,
+      2
     )}    
  export default ${file.destination
-        .replace(`esm/colors/`, "")
-        .replace(`.d.ts`, "")};`;
+   .replace(`esm/colors/`, "")
+   .replace(`.d.ts`, "")};`;
 
     return output
-        .replace(/"any"/g, "any")
-        .replace(/"string"/g, "string")
-        .replace(/"number"/g, "number");
+      .replace(/"any"/g, "any")
+      .replace(/"string"/g, "string")
+      .replace(/"number"/g, "number");
   },
 });
 // ts index
 StyleDictionary.registerFormat({
   name: "typescript/index",
-  formatter: function ({dictionary, options, file}) {
+  formatter: function ({ dictionary }) {
     const getType = (value) => {
       switch (typeof value) {
         case "string":
@@ -151,7 +154,7 @@ StyleDictionary.registerFormat({
       }
     };
 
-    const recursiveTypeGeneration = (obj) => {
+    const generateTypes = (obj) => {
       const tree = {};
 
       if (typeof obj !== "object" || Array.isArray(obj)) {
@@ -163,28 +166,28 @@ StyleDictionary.registerFormat({
       } else {
         for (const name in obj) {
           if (obj.hasOwnProperty(name)) {
-            tree[name] = recursiveTypeGeneration(obj[name]);
+            tree[name] = generateTypes(obj[name]);
           }
         }
       }
       return tree;
     };
 
+    const normalizedThemeObj = normalizeThemeName(dictionary.tokens);
+
     const output = `${this.selector}: ${JSON.stringify(
-        recursiveTypeGeneration(dictionary.tokens),
-        null,
-        2
+      generateTypes(normalizeTokenPath(normalizedThemeObj)),
+      null,
+      2
     )}
  export default _default;`;
 
     return output
-        .replace(/"any"/g, "any")
-        .replace(/"string"/g, "string")
-        .replace(/"number"/g, "number");
+      .replace(/"any"/g, "any")
+      .replace(/"string"/g, "string")
+      .replace(/"number"/g, "number");
   },
 });
-//
-//
 //
 StyleDictionary.extend({
   source: ["data/**/*.json"],
@@ -250,7 +253,7 @@ StyleDictionary.extend({
             customProperty: true,
             theme: "light",
           },
-        }
+        },
       ],
     },
     jsObjectEsm: {
