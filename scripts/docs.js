@@ -1,28 +1,21 @@
 const StyleDictionary = require('style-dictionary');
 const glob = require("glob");
-const { normalizeTokenName
+const {
+    normalizeTokenName
 } = require("../lib/utils");
-
-
-StyleDictionary.registerTransform({
-    name: "normalizeName",
-    type: "value",
-    transitive: true,
-    matcher:(token)=>token.type==="color",
-    transformer:(token)=>{
-        const {value} = token;
-        return normalizeTokenName(value);
-    }
-    })
 
 // Add a custom format that will generate the tokens related docs format
 StyleDictionary.registerFormat({
     name: 'json/flatSyncTable',
     formatter: (dictionary) => {
-        return '{\n' + dictionary.allProperties.map(function (prop) {
-            return `  "${prop.name}": ["${prop.value}","${prop.role}"]`;
-        }).join(',\n') + '\n}';
-    }
+        return (
+            "{\n" + dictionary.allProperties.map(
+                function (prop) {
+                    return `"${normalizeTokenName(prop.path)}": ["${prop.value}","${prop.role}"]`;
+                }
+            ).join(",\n") + "\n}"
+        );
+    },
 });
 
 StyleDictionary.extend({
@@ -31,7 +24,6 @@ StyleDictionary.extend({
         // Story book sync tables
         "syncCoreSwatch": {
             "transforms": [
-                "normalizeName",
                 "attribute/cti",
                 "attribute/color",
                 "name/cti/kebab"
