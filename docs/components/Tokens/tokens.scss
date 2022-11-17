@@ -1,0 +1,23 @@
+@import "dist/scss/variables.scss";
+
+
+.tokens-table {
+  width: 100%;
+  text-align: left;
+
+  td,
+  th{
+    padding: $spacing-small;
+  }
+
+  td {
+    border-bottom: 1px solid $light-theme-ui-border-color;
+    height: 40px;
+    vertical-align: middle;
+  }
+
+  th{
+    padding-bottom: $spacing-large;
+    border-bottom: 1px solid $light-theme-ui-border-color;
+  }
+}
