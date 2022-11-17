@@ -50,6 +50,15 @@ Our tokens are divided into scopes
 
 ### Token Roles
 
-We have reference tokens: content, palette.
-We have key tokens.
-In Vibe related efforts we recommend using only key tokens.
+* Reference tokens: content, palette.
+* Key tokens.
+* In Vibe related efforts we recommend using only key tokens.
+
+### Storybook reference
+* An Example of token values can be used viewed using a storybook instance. 
+  * Content colors
+  * Brand Palette
+  * Natural Palette
+  * Use: 
+    * ```npm run build```
+    * ```npm run storybook```
