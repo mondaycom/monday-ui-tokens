@@ -23,11 +23,6 @@ StyleDictionary.extend({
     platforms: {
         // Story book sync tables
         "syncCoreSwatch": {
-            "transforms": [
-                "attribute/cti",
-                "attribute/color",
-                "name/cti/kebab"
-            ],
             "buildPath": "docs/data/js/tokens-tables/",
             "files": [
                 {
