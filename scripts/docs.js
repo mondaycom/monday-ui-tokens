@@ -12,7 +12,7 @@ StyleDictionary.registerFormat({
         return (
             "{\n" + dictionary.allProperties.map(
                 function (prop) {
-                    return `"${normalizeTokenName(prop.path)}": ["${prop.value}","${chroma(prop.value).css('hsl')})" ,"${chroma(prop.value).css()}","${prop.role}"]`;
+                    return `"${normalizeTokenName(prop.path)}": ["${prop.value}","${chroma(prop.value).css('hsl')}" ,"${chroma(prop.value).css()}","${prop.role}"]`;
                 }
             ).join(",\n") + "\n}"
         );
